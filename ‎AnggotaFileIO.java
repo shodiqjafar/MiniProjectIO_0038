@@ -23,8 +23,7 @@ public class AnggotaFileIO {
         try (BufferedReader reader = new BufferedReader(new FileReader(namaFile))) {
             String baris;
             while ((baris = reader.readLine()) != null) {
-                if (baris.isBlank())
-                    continue;
+                if (baris.isBlank()) continue;
                 String[] bagian = baris.split(";");
                 String nama = bagian[0];
                 String id = bagian[1];
